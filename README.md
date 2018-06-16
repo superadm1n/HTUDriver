@@ -10,9 +10,33 @@ I2C communication enabled on Raspberry Pi.
 
 pigpio
 
-### Special Notes
-The README for this project is not complete at this time,
-directions for use and installation need to be compiled.
+
+### Installation
+Issue the following commands to install this driver into your project
+
+```
+pip install git+https://github.com/superadm1n/HTUDriver
+```
+
+### Using Driver
+Below is example code for using the driver to read the temperature
+and humidity.
+
+```
+with HTUDriver() as sensor:
+
+    # gets temperature and humidity
+    temp = sensor.get_temperature()
+    humidity = sensor.get_humidity()
+
+    # prints values to the user
+
+    print('Temperature: {}'.format(temp))
+    print('Humidity: {}'.format(humidity)
+
+#EOF
+```
+
 
 ## Author
 
