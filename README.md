@@ -15,7 +15,9 @@ pigpio
 Issue the following commands to install this driver into your project
 
 ```
-pip install git+https://github.com/superadm1n/HTUDriver
+git clone https://github.com/superadm1n/HTUDriver
+cd HTUDriver
+python setup.py install
 ```
 
 ### Using Driver
