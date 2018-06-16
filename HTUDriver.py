@@ -34,7 +34,7 @@ Author: Kyle Kowalczyk
 import time
 import pigpio
 
-class HTUDriver:
+class Driver:
 
     FAHRENHEIT = 0
     CELSIUS = 1
