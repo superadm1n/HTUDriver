@@ -6,6 +6,7 @@ It uses I2C to communicate with the module'''
 setup(
     name='HTUDriver',
     version='1.0.0',
+    packages=['HTUDriver'],
     keywords='Adafruit ht21d-f temperature humidity sensor',
     url='https://github.com/superadm1n/HTUDriver',
     license='MIT',

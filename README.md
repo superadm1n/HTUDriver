@@ -15,9 +15,7 @@ pigpio
 Issue the following commands to install this driver into your project
 
 ```
-git clone https://github.com/superadm1n/HTUDriver
-cd HTUDriver
-python setup.py install
+pip install git+https://github.com/superadm1n/HTUDriver
 ```
 
 ### Using Driver
@@ -25,7 +23,8 @@ Below is example code for using the driver to read the temperature
 and humidity.
 
 ```
-with HTUDriver() as sensor:
+import HTUDriver
+with HTUDriver.Driver() as sensor:
 
     # gets temperature and humidity
     temp = sensor.get_temperature()
